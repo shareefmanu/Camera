@@ -758,12 +758,6 @@ fun DialogsContainer(
 
         is DialogState.SavePhotoNamed -> {
             var photoNameInput by remember { mutableStateOf("") }
-            
-            // Generate a placeholder default timestamp name
-            LaunchedEffect(Unit) {
-                val format = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault())
-                photoNameInput = "img_${format.format(Date())}"
-            }
 
             Dialog(onDismissRequest = onClose) {
                 Surface(
