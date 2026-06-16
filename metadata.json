@@ -1,0 +1,6 @@
+{
+  "name": "SnapFolder Camera",
+  "description": "Camera app that lets you name your photos instantly and save them into custom folders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
